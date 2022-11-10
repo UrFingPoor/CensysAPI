@@ -11,7 +11,7 @@ namespace ExampleProject
 {
     public class CensysAPI
     {
-        //Python Port To C# By Me For Fuck Sake They Need Better Docs!
+        //C# Example: Censys only supports python so heres an example for you CS lovers!
         public async Task<string> Search(string host)
         {
             using (var client = new HttpClient())
