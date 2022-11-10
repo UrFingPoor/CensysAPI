@@ -1,5 +1,5 @@
 
-###Usage
+###### Usage:
 ```cs
-        Task.Run(() => API.Search(HostBox.Text)); 
+        Task.Run(() => API.Search(hostBox.Text)); 
 ```
