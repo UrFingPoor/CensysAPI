@@ -33,7 +33,7 @@ namespace ExampleProject
                         MessageBox.Show("Unauthorized: You must authenticate with a valid API ID and secret.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         break;
                     case (HttpStatusCode)422:  //since im coding with the 4.8 framework, this is not included so i added it but the updated lib includes this. .Net 6.0 Use: HttpStatusCode.UnprocessableEntity
-                        MessageBox.Show("invalid cursor: Remove The https://.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Invalid cursor: Remove The https://.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         break;
                     case (HttpStatusCode)429: //since im coding with the 4.8 framework, this is not included so i added it but the updated lib includes this.  .Net 6.0 Use: HttpStatusCode.TooManyRequests
                         MessageBox.Show("Too many requests: Please wait abit before resending the request.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
