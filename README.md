@@ -1,2 +1,5 @@
-# CensysAPI
-C# Port Of The Python Example To Request Data From Search.Censys.io
+
+#Useage
+```cs
+        Task.Run(() => API.Search(HostBox.Text)); 
+```
