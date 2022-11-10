@@ -4,7 +4,7 @@ This allows you to check your host and see if your backend ipaddress is exposed 
 
 ###### Usage:
 ```cs
-        Task.Run(() => API.Search(hostBox.Text)); 
+Task.Run(() => API.Search(hostBox.Text)); 
 ```
 
 ###### Requirements:
