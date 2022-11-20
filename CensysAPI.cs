@@ -23,7 +23,7 @@ namespace ExampleProject
                 {
                     case HttpStatusCode.OK:
                         response = JObject.Parse(await result.Content.ReadAsStringAsync());
-                        File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + $"{host}.json", Convert.ToString(response));
+                        await File.WriteAllText(AppDomain.CurrentDomain.BaseDirectory + $"{host}.json", Convert.ToString(response));
                         MessageBox.Show($"Saved To {AppDomain.CurrentDomain.BaseDirectory + $"{host}.json"}!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         break;
                     case HttpStatusCode.BadRequest:
